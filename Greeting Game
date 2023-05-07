@@ -1,0 +1,20 @@
+day = input('Enter how good your day was on a scale from 1 to 10: ')
+time = input('Is it morning, afternoon, evening, or night for you? ')
+
+i = 0
+exclamations = ''
+
+while i < int(day):
+    exclamations = exclamations + '!'
+    i = i + 1
+
+if time == 'morning':
+    print('Good Morning' + exclamations)
+elif time == 'evening':
+    print('Good Evening' + exclamations)
+elif time == 'afternoon':
+    print('Good Afternoon' + exclamations)
+elif time == 'night':
+    print('Good Night' + exclamations)
+else:
+    print('Have a horrible day' + exclamations)
